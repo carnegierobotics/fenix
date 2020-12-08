@@ -3,11 +3,13 @@ source /etc/network/interfaces.d/*
 # Wired adapter #1
 allow-hotplug eth0
 no-auto-down eth0
-iface eth0 inet dhcp
-#iface eth0 inet static
-#address 192.168.0.100
-#netmask 255.255.255.0
-#gateway 192.168.0.1
+#iface eth0 inet dhcp
+iface eth0 inet static
+address 10.66.171.101
+netmask 255.255.255.0
+gateway 10.66.171.1
+mtu 2000
+up /usr/bin/ip route add 10.66.172.0/24 via 10.66.171.21
 #dns-nameservers 8.8.8.8 8.8.4.4
 #	hwaddress ether # if you want to set MAC manually
 #	pre-up /sbin/ifconfig eth0 mtu 3838 # setting MTU for DHCP, static just: mtu 3838
