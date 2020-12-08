@@ -101,7 +101,7 @@ start_time=`date +%s`
 check_make_params
 display_parameters
 prepare_host
-check_update
+#check_update
 prepare_toolchains
 prepare_packages
 build_uboot
