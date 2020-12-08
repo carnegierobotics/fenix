@@ -170,7 +170,8 @@ PACKAGE_LIST="bc cpufrequtils device-tree-compiler fping fake-hwclock psmisc chr
 
 # Non-essential packages
 PACKAGE_LIST_ADDITIONAL="network-manager wireless-tools lsof htop mmc-utils wget nano sysstat net-tools \
-	resolvconf iozone3 jq libcrack2 cracklib-runtime curl rfkill bison flex libssl-dev"
+	resolvconf iozone3 jq libcrack2 cracklib-runtime curl rfkill bison flex libssl-dev ethtool vim iputils-arping \
+	i2c-tools pciutils iperf3"
 
 if [[ "$DISTRIB_TYPE" != "minimal" ]]; then
 
